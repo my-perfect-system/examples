@@ -1,0 +1,17 @@
+---
+- import_playbook: terminal_minimal.yml
+
+- name: Configure desktop (minimal)
+  hosts: all
+  become: true
+
+  roles:
+    - mps.desktop.x11
+    - mps.desktop.wm
+    - mps.desktop.qtile
+    - mps.desktop.rofi
+    - mps.desktop.thunar
+    - mps.desktop.essentials
+    - mps.desktop.lightdm
+    - mps.desktop.gnometools
+    - mps.desktop.brave

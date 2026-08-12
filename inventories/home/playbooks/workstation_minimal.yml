@@ -1,0 +1,22 @@
+---
+- import_playbook: desktop_full.yml
+
+- name: Configure workstation (minimal)
+  hosts: all
+  become: true
+
+  roles:
+    # mps.optimize
+    - mps.optimize.zram
+    - mps.optimize.ramdisks
+    - mps.optimize.kmscon
+
+    # mps.development
+    - mps.development.opencode
+
+    # mps.hardening
+    - mps.hardening.firewall
+    - mps.hardening.apparmor
+    - mps.hardening.auditd
+    - mps.hardening.aide
+    - mps.hardening.lockdown

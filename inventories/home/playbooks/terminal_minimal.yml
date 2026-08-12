@@ -1,0 +1,11 @@
+---
+- import_playbook: bootstrap.yml
+
+- name: Configure terminal (minimal)
+  hosts: all
+  become: true
+
+  roles:
+    - mps.terminal.bash
+    - mps.terminal.vim
+    - mps.terminal.tmux

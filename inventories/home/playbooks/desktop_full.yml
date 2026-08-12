@@ -1,0 +1,23 @@
+---
+- import_playbook: terminal_full.yml
+
+- name: Configure desktop (full)
+  hosts: all
+  become: true
+
+  roles:
+    - mps.desktop.x11
+    - mps.desktop.wm
+    - mps.desktop.qtile
+    - mps.desktop.rofi
+    - mps.desktop.thunar
+    - mps.desktop.essentials
+    - mps.desktop.kanata
+    - mps.desktop.lightdm
+    - mps.desktop.plymouth
+    - mps.desktop.grubmenu
+    - mps.desktop.gnometools
+    - mps.desktop.firefox
+    - mps.desktop.thunderbird
+    - mps.desktop.brave
+    - mps.desktop.spotify

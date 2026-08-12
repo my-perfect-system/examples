@@ -1,7 +1,0 @@
----
-- name: Configure desktops
-  hosts: all
-  become: true
-
-  roles:
-    - mps.meta.desktop_full

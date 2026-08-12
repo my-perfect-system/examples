@@ -1,0 +1,18 @@
+---
+- import_playbook: bootstrap.yml
+
+- name: Configure terminal (full)
+  hosts: all
+  become: true
+
+  roles:
+    - mps.terminal.bash
+    - mps.terminal.vim
+    - mps.terminal.nvim
+    - mps.terminal.tmux
+    - mps.terminal.kitty
+    - mps.terminal.fonts
+    - mps.terminal.python
+    - mps.terminal.rust
+    - mps.terminal.scripts
+    - mps.terminal.skeletons
