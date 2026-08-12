@@ -1,0 +1,59 @@
+# aide_packages:
+#   - aide
+#   - aide-common
+# aide_confd_dir: /etc/aide/aide.conf.d
+# aide_exclusions_file: 70_exclusions.conf
+# aide_exclusions_path: "{{ aide_confd_dir }}/{{ aide_exclusions_file }}"
+
+# apparmor_packages:
+#   - apparmor-utils
+#   - apparmor-profiles
+#   - apparmor-profiles-extra
+#   - rsync
+
+# auditd_packages:
+#   - auditd
+# auditd_log_file: /var/log/audit/audit.log
+# auditd_log_format: RAW
+# auditd_flush: INCREMENTAL
+# auditd_freq: 50
+# auditd_max_log_file: 8
+# auditd_max_log_file_action: ROTATE
+# auditd_space_left: 75
+# auditd_space_left_action: SYSLOG
+# auditd_admin_space_left: 50
+# auditd_admin_space_left_action: SUSPEND
+# auditd_disk_full_action: SUSPEND
+# auditd_disk_error_action: SUSPEND
+# auditd_run_dir: /var/run/audit
+# auditd_rules_dir: /etc/audit/rules.d
+# auditd_config_path: /etc/audit/auditd.conf
+# auditd_override_dir: /usr/lib/systemd/system/auditd.service.d
+# auditd_override_path: "{{ auditd_override_dir }}/override.conf"
+# auditd_localstatedir: /var
+
+# firewall_enable_icmp: true
+# firewall_enable_nat_ip_forwarding: false
+# firewall_packages:
+#   - iptables
+# firewall_policies:
+#   input: DROP
+#   output: ACCEPT
+#   forward: DROP
+# firewall_tcp_ports:
+#   - "22"
+# firewall_udp_ports: []
+# firewall_rules_dir: /etc/iptables
+# firewall_rules_path: "{{ firewall_rules_dir }}/rules.v4"
+# firewall_service_name: iptables
+# firewall_service_path: /etc/systemd/system/{{ firewall_service_name }}.service
+# firewall_nat_out_interface: ""
+# firewall_nat_source_network: ""
+
+# lockdown_enable_execute: false
+# lockdown_user: "{{ ansible_user }}"
+# lockdown_user_home: "/home/{{ lockdown_user }}"
+# lockdown_repos_dir: "{{ lockdown_user_home }}/repo/github"
+# lockdown_cis_repo: "https://github.com/ansible-lockdown/DEBIAN13-CIS"
+# lockdown_cis_version: "main"
+# lockdown_firewall_package: iptables

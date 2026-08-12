@@ -1,0 +1,7 @@
+---
+- name: Configure Workstations
+  hosts: all
+  become: true
+
+  roles:
+    - mps.meta.workstation.minimal

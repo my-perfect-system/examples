@@ -1,0 +1,36 @@
+# bash_enable_bash_completion: true
+# bash_enable_fun_packages: true
+# bash_enable_aliases: true
+# bash_fun_packages:
+#   - cowsay
+#   - figlet
+#   - fortune-mod
+#   - fortunes-min
+#   - cmatrix
+
+# fonts_dir: /usr/share/fonts
+# fonts_list:
+#   - name: JetBrainsMono
+#     url: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip
+#     dst_unzip_path: "{{ fonts_dir }}/JetBrainsMono"
+#     creates: "{{ fonts_dir }}/JetBrainsMono/JetBrainsMonoNerdFont-Regular.ttf"
+#   - name: codicon
+#     url: https://github.com/microsoft/vscode-codicons/releases/download/0.0.36/codicon.ttf
+#     dst_unzip_path: "{{ fonts_dir }}/codicon"
+#     file_only: true
+
+# kitty_enable_alternatives: true
+
+# nvim_enable_apt_deps: true
+# nvim_enable_npm_tools: true
+# nvim_enable_tarball: true
+# nvim_enable_yazi: true
+# nvim_enable_fd: true
+# nvim_enable_tree_sitter: true
+# nvim_yazi_version: "v26.5.6"
+
+# rust_enable_toolchain_reinstall: false
+
+# vim_enable_vim_nox: true
+# vim_enable_lua: true
+# vim_enable_xclip: true

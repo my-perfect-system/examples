@@ -1,0 +1,60 @@
+# dotnet_installer_url: "https://dot.net/v1/dotnet-install.sh"
+# dotnet_installer_path: /tmp/dotnet-install.sh
+# dotnet_install_args: "--version latest"
+
+# espidf_versions:
+#   - v5.3
+# espidf_src_base: esp/sources
+# espidf_tools_base: esp/tools
+# espidf_local_bin: .local/bin
+# espidf_apt_packages:
+#   - git
+#   - wget
+#   - flex
+#   - bison
+#   - gperf
+#   - cmake
+#   - ninja-build
+#   - ccache
+#   - libffi-dev
+#   - libssl-dev
+#   - dfu-util
+#   - python3
+#   - python3-pip
+#   - python3-venv
+
+# java_packages:
+#   - default-jdk
+#   - default-jre
+
+# latex_packages:
+#   - texlive-full
+
+# lmstudio_cli_installer_url: "https://lmstudio.ai/install.sh"
+# lmstudio_appimage_version: "0.4.12-1"
+# lmstudio_appimage_url: "https://installers.lmstudio.ai/linux/x64/{{ lmstudio_appimage_version }}/LM-Studio-{{ lmstudio_appimage_version }}-x64.AppImage"
+# lmstudio_cli_bin: .lmstudio/bin/lms
+# lmstudio_appimage_path: .local/bin/lmstudio.AppImage
+# lmstudio_appimage_local_bin: .local/bin
+# lmstudio_desktop_file: .local/share/applications/lmstudio.desktop
+
+# opencode_installer_url: "https://opencode.ai/install"
+# opencode_cli_bin: .opencode/bin/opencode
+# opencode_installer_path: /tmp/opencode-install.sh
+# opencode_dotfiles_root: "{{ role_path }}/files/dotfiles"
+# opencode_config_src: "{{ opencode_dotfiles_root }}/.config/opencode/"
+# opencode_config_dst: .config
+# opencode_claude_src: "{{ opencode_dotfiles_root }}/.claude/"
+# opencode_claude_dst: .claude
+
+# unity_enable_vscode: true
+# unity_key_url: "https://hub.unity3d.com/linux/keys/public"
+# unity_key_path: "/usr/share/keyrings/Unity_Technologies_ApS.gpg"
+# unity_repo_url: "https://hub.unity3d.com/linux/repos/deb"
+# unity_repo_state: present
+# unity_repo_components:
+#   - stable
+#   - main
+# unity_packages:
+#   - unityhub
+# unity_vscode_deb_url: "https://go.microsoft.com/fwlink/?LinkID=760868"

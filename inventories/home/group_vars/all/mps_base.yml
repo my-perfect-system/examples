@@ -1,0 +1,36 @@
+# user_shell: /bin/bash
+# user_create_home: true
+# user_system: false
+# user_expires: -1
+# user_groups: []
+# admin_groups: ["admin", "config"]
+# user_append_groups: true
+# user_password: "changeme"
+# user_roles_default:
+#   terminal_bash: true
+#   terminal_vim: true
+#   terminal_nvim: true
+#   terminal_tmux: true
+#   terminal_kitty: true
+#   terminal_python: true
+#   terminal_rust: true
+#   terminal_scripts: true
+#   desktop_essentials: true
+#   desktop_wm: true
+#   desktop_rofi: true
+#   desktop_qtile: true
+#   desktop_thunar: true
+#   desktop_kanata: true
+#   backup_backup: true
+#   development_opencode: true
+#   development_lmstudio: true
+#   development_espidf: true
+#   development_dotnet: true
+#   development_java: true
+#   development_latex: true
+#   development_unity: true
+# user_roles_minimal:
+#   terminal_bash: true
+#   terminal_vim: true
+# users_catalog: {}
+# users_list: []

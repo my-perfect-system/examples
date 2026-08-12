@@ -1,0 +1,29 @@
+# package_manager_enable_auto_upgrades: true
+# package_manager_enable_repos_main: true
+# package_manager_enable_repos_updates: true
+# package_manager_enable_repos_backports: true
+# package_manager_enable_repos_security: true
+# package_manager_enable_components_contrib: true
+# package_manager_enable_components_non_free: true
+# package_manager_enable_components_non_free_firmware: true
+# package_manager_enable_deb_src: true
+# package_manager_upgrade: dist
+
+# system_settings_timezone: "Europe/Berlin"
+# system_settings_locale_name: "en_US.UTF-8"
+# system_settings_keyboard_model: "pc105"
+# system_settings_keyboard_layout: "de"
+# system_settings_keyboard_variant: "nodeadkeys"
+# system_settings_keyboard_options: "compose:menu"
+# system_settings_console_charset: "UTF-8"
+# system_settings_console_codeset: "Lat15"
+# system_settings_console_fontface: "Terminus"
+# system_settings_console_fontsize: "8x16"
+
+# system_tools_enable_archives: true
+# system_tools_enable_build: true
+# system_tools_enable_fm: true
+# system_tools_enable_core: true
+# system_tools_enable_transfer: true
+# system_tools_enable_net: true
+# system_tools_enable_stats: true

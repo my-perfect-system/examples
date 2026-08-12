@@ -1,0 +1,229 @@
+# brave_keyring_path: /usr/share/keyrings/brave-browser-archive-keyring.gpg
+# brave_repo_url: https://brave-browser-apt-release.s3.brave.com/
+# brave_apt_filename: brave-browser
+# brave_packages:
+#   - ca-certificates
+#   - curl
+#   - gnupg
+#   - apt-transport-https
+
+# essentials_packages_base:
+#   - galculator
+#   - arandr
+#   - iw
+#   - xcwd
+#   - espeak
+#   - lxde-icon-theme
+#   - thunderbird
+#   - firefox-esr
+#   - evince
+#   - autorandr
+#   - ddcutil
+# essentials_packages_sound:
+#   - pulseaudio
+#   - pavucontrol
+#   - volumeicon-alsa
+#   - vorbis-tools
+#   - libmpg123-dev
+# essentials_packages_xdg:
+#   - xdg-utils
+#   - xdg-user-dirs
+# essentials_dotfiles_gtk:
+#   - .gtkrc-2.0
+#   - .config/gtk-2.0
+#   - .config/gtk-3.0
+# essentials_dotfiles_gedit:
+#   - .config/gedit
+# essentials_dotfiles_dconf:
+#   - .config/dconf
+# essentials_bootsplash_src: bootsplash.png
+# essentials_bootsplash_dst: /usr/share/images/desktop/bootsplash.png
+# essentials_wallpapers_dir: /usr/share/images/desktop/wallpaper
+# essentials_wallpapers_list:
+#   - wormhole.jpg
+#   - moon.jpg
+#   - mountains.jpg
+#   - zwielicht.jpg
+#   - mainframe.jpg
+#   - backyard.jpg
+#   - mobile.jpg
+#   - xp.jpg
+#   - guitar.jpg
+#   - vorschlag.jpg
+
+# grubmenu_themes_dir: /boot/grub/themes
+# grubmenu_icons_dir: /boot/grub/icons
+# grubmenu_default_theme: anon
+# grubmenu_themes:
+#   - anon
+#   - showroom
+# grubmenu_icons:
+#   - light
+# grubmenu_gfxmode: 1920x1080
+# grubmenu_app_version: "1.0"
+
+# kanata_cargo_features: cmd
+# kanata_config_path: ~/.config/kanata/kanata.kbd
+# kanata_udev_rule_path: /etc/udev/rules.d/99-kanata-uinput.rules
+# kanata_udev_rule_content: |
+#   KERNEL=="uinput", MODE="0660", GROUP="uinput", OPTIONS+="static_node=uinput"
+# kanata_modules_load_path: /etc/modules-load.d/uinput.conf
+# kanata_modules_load_content: |
+#   uinput
+# kanata_packages:
+#   - udev
+
+# lightdm_wallpaper: wormhole.jpg
+# lightdm_wallpapers_dir: /usr/share/images/desktop/wallpaper
+# lightdm_greeter_conf: /etc/lightdm/lightdm-gtk-greeter.conf
+
+# plymouth_packages:
+#   - plymouth
+#   - plymouth-themes
+# plymouth_themes_dir: /usr/share/plymouth/themes
+# plymouth_default_theme: anon
+
+# qtile_packages:
+#   - python3-psutil
+#   - python3-pip
+#   - python-dbus-dev
+#   - python3-pulsectl
+#   - git
+#   - bpytop
+#   - libpangocairo-1.0-0
+#   - lightdm
+#   - lightdm-gtk-greeter
+# qtile_repo_url: https://github.com/qtile/qtile
+# qtile_repo_version: v0.31.0
+# qtile_repo_dest: ~/venvs/qtile/src
+# qtile_venv_path: ~/.venvs/qtile
+# qtile_xsessions_dir: /usr/share/xsessions
+# qtile_xsessions_file: qtile.desktop
+# qtile_xsessions_path: "{{ qtile_xsessions_dir }}/{{ qtile_xsessions_file }}"
+# qtile_local_bin_dir: /usr/local/bin
+# qtile_local_bin_scripts:
+#   - qtile-startup.bash
+#   - qtile-reload.bash
+#   - qtile-restart.bash
+# qtile_user_scripts:
+#   - qtile-autostart-start.bash
+#   - qtile-autostart-stop.bash
+# qtile_wallpapers: []
+# qtile_wallpapers_dir: /usr/share/images/desktop/wallpaper
+# qtile_vpn_admin_host: bks-adm
+# qtile_vpn_pub_host: pub-all
+# qtile_kanata_state_path: /tmp/kanata.state
+# qtile_autostart_keyboard: de
+# qtile_autostart_xset_rate: "xset r rate 250 50"
+# qtile_autostart_displays:
+#   - name: PRIMARY
+#     output: HDMI-1
+#     mode: 3840x2160
+#     position: 0x0
+#     scale: 1.0x1.0
+#     primary: true
+#   - name: SECONDARY
+#     output: DP-1
+#     mode: 1920x1080
+#     position: 3840x1080
+#     scale: 1.6x1.6
+#     primary: false
+# qtile_scratchpad_dropdowns:
+#   - name: pavu
+#     cmd: pavucontrol
+#   - name: term
+#     cmd: "kitty bash"
+#   - name: calc
+#     cmd: galculator
+#   - name: htop
+#     cmd: "kitty htop"
+#   - name: hermes
+#     cmd: "kitty ssh dev-hermes chat"
+#   - name: opencode
+#     cmd: "kitty ssh dev-oc chat"
+
+# rofi_packages:
+#   - rofi
+# rofi_dotfiles:
+#   - .config/rofi
+# rofi_themes_dir: /usr/share/rofi/themes
+# rofi_themes:
+#   - rofi-boot-autorandr.rasi
+#   - rofi-boot-dwmswitch.rasi
+#   - rofi-boot-launcher.rasi
+#   - rofi-boot-powermenu.rasi
+# rofi_scripts:
+#   - rofi-boot-launcher.bash
+#   - rofi-boot-powermenu.bash
+#   - rofi-boot-autorandr.bash
+#   - rofi-boot-dwmswitch.bash
+#   - rofi-boot-tmux.bash
+#   - rofi-boot-tmuxinator.bash
+#   - rofi-boot-tmux-sessionizer.bash
+#   - rofi-boot-tmux-tmuxinizer.bash
+
+# spotify_key_url: https://download.spotify.com/debian/pubkey_5384CE82BA52C83A.asc
+# spotify_repo_url: https://repository.spotify.com
+# spotify_keyring_path: /etc/apt/trusted.gpg.d/spotify.gpg
+# spotify_apt_filename: spotify
+# spotify_packages:
+#   - ca-certificates
+#   - curl
+#   - gnupg
+#   - apt-transport-https
+
+# thunar_packages:
+#   - thunar
+#   - thunar-archive-plugin
+#   - thunar-media-tags-plugin
+#   - thunar-volman
+#   - thunar-gtkhash
+#   - thunarx-python
+# thunar_xfce_packages:
+#   - xfce4-goodies
+#   - xfce4-places-plugin
+#   - thunar-font-manager
+# thunar_dotfiles:
+#   - .config/Thunar
+#   - .config/xfce4
+
+# wm_packages:
+#   - feh
+#   - lxappearance
+#   - lightdm
+#   - picom
+#   - xscreensaver
+#   - xscreensaver-data-extra
+#   - xscreensaver-gl
+#   - xscreensaver-screensaver-bsod
+#   - x11-utils 
+#   - xinit 
+#   - x11-xserver-utils
+#   - xserver-xorg-video-amdgpu 
+#   - xserver-xorg-video-nvidia 
+#   - xserver-xorg-video-intel 
+#   - mesa-va-drivers 
+#   - mesa-vulkan-drivers
+#   - lxlock
+#   - xbacklight
+#   - numlockx
+#   - xclip
+#   - dconf-cli
+#   - dconf-editor
+#   - dunst
+# wm_dotfiles:
+#   - .config/picom.conf
+#   - .config/dunst
+
+# x11_packages:
+#   - xorg
+#   - xserver-xorg-video-nouveau
+#   - xserver-xorg-video-vesa
+#   - xterm
+#   - mesa-utils
+#   - freeglut3-dev
+#   - libglm-dev
+#   - libao-dev
+#   - libxinerama-dev
+#   - libxft-dev
+#   - libglu1-mesa-dev

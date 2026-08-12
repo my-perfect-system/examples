@@ -1,0 +1,20 @@
+# kmscon_packages:
+#   - kmscon
+#   - libtsm4
+# kmscon_default_release: trixie-backports
+# kmscon_config_dir: /etc/kmscon
+# kmscon_conf_src: "{{ role_path }}/files/etc/kmscon/kmscon.conf"
+# kmscon_conf_dst: "{{ kmscon_config_dir }}/kmscon.conf"
+
+# ramdisks_mount: /var/log
+# ramdisks_opts: "mode=1777,nosuid,nodev"
+# ramdisks_fstab_marker: "# {mark} ANSIBLE MANAGED: tmpfs {{ ramdisks_mount }}"
+# ramdisks_backup_path: /tmp/var-log-backup
+# ramdisks_backup_marker: "{{ ramdisks_backup_path }}/.backup_done"
+
+# zram_packages:
+#   - zram-tools
+# zram_percentage: 10
+# zram_config_path: /etc/default/zramswap
+# zram_service: zramswap
+# zram_algo: zstd

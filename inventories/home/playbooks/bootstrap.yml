@@ -1,0 +1,7 @@
+---
+- name: Bootstrap hosts
+  hosts: all
+  become: true
+
+  roles:
+    - mps.meta.bootstrap

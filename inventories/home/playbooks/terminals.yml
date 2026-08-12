@@ -1,0 +1,8 @@
+---
+- name: Configure terminals
+  hosts: all
+  become: true
+
+  roles:
+    - mps.meta.terminal_full
+

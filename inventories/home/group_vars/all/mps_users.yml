@@ -1,0 +1,46 @@
+# groups_enable_extract_from_users: true
+# groups_list: []
+
+# sudo_macros:
+#   ADMIN_DEFAULT:
+#     - "/usr/bin/apt"
+#     - "/usr/bin/systemctl"
+#     - "/usr/bin/journalctl *"
+#     - "/usr/bin/df *"
+#     - "/usr/bin/du *"
+#     - "/usr/sbin/lsblk *"
+#     - "/usr/bin/netstat *"
+#     - "/usr/bin/which *"
+#     - "/usr/bin/cat /etc/hosts"
+#     - "/usr/bin/cat /etc/resolv.conf"
+#     - "/usr/bin/cat /etc/network/interfaces"
+#     - "/usr/sbin/route -n"
+#     - "/usr/sbin/iptables -L *"
+#     - "/usr/sbin/brctl show *"
+#     - "/usr/sbin/poweroff"
+#     - "/usr/sbin/reboot"
+#   ADMIN_DEBUG:
+#     - "/bin/sh *"
+#     - "/bin/bash *"
+#     - "/usr/bin/apt *"
+#     - "/usr/lib/apt/methods/http *"
+#     - "/usr/bin/rsync *"
+#     - "/usr/bin/cp *"
+#     - "/usr/bin/rm *"
+#     - "/usr/bin/mv *"
+#     - "/usr/bin/ln *"
+#     - "/usr/bin/mount *"
+#     - "/usr/bin/umount *"
+#     - "/usr/bin/tee *"
+#     - "/usr/bin/batcat *"
+#     - "/usr/bin/cat *"
+#     - "/usr/bin/vi *"
+#     - "/usr/bin/vim *"
+#     - "/usr/bin/nano *"
+#     - "/usr/sbin/route *"
+#     - "/usr/sbin/iptables *"
+#     - "/usr/sbin/brctl *"
+#   ADMIN_MINIMAL:
+#     - "/usr/bin/su -"
+
+# users_enable_print_passwords_plaintext: false
