@@ -6,18 +6,18 @@
   become: true
 
   roles:
-    - mps.desktop.x11
-    - mps.desktop.wm
-    - mps.desktop.qtile
-    - mps.desktop.rofi
-    - mps.desktop.thunar
-    - mps.desktop.essentials
-    - mps.desktop.kanata
-    - mps.desktop.lightdm
-    - mps.desktop.plymouth
-    - mps.desktop.grubmenu
-    - mps.desktop.gnometools
-    - mps.desktop.firefox
-    - mps.desktop.thunderbird
-    - mps.desktop.brave
-    - mps.desktop.spotify
+    - odem.desktop.x11
+    - odem.desktop.wm
+    - odem.desktop.qtile
+    - odem.desktop.rofi
+    - odem.desktop.thunar
+    - odem.desktop.essentials
+    - odem.desktop.kanata
+    - odem.desktop.lightdm
+    - odem.desktop.plymouth
+    - odem.desktop.grubmenu
+    - odem.desktop.gnometools
+    - odem.desktop.firefox
+    - odem.desktop.thunderbird
+    - odem.desktop.brave
+    - odem.desktop.spotify

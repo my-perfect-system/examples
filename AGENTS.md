@@ -1,6 +1,6 @@
 # AGENTS.md — examples
 
-Reference inventory layouts for the `mps.*` Ansible collections.
+Reference inventory layouts for the `odem.*` Ansible collections.
 Hosts sample `inventories/<env>/` directories that can be copied wholesale
 or partially to seed a real deployment.
 
@@ -23,16 +23,16 @@ examples/
         │   └── testvm.yml               # per-host overrides (ansible_host)
         ├── group_vars/
         │   └── all/
-        │       ├── 00-shared.yml        # cross-tier vars (e.g. mps_user_roles_default)
-        │       ├── mps_base.yml         # mps-base role variable overrides
-        │       ├── mps_os.yml           # mps-os role variable overrides
-        │       ├── mps_users.yml
-        │       ├── mps_optimize.yml
-        │       ├── mps_terminal.yml
-        │       ├── mps_development.yml
-        │       ├── mps_desktop.yml
-        │       ├── mps_hardening.yml
-        │       └── mps_backup.yml
+        │       ├── 00-shared.yml        # cross-tier vars (e.g. odem_user_roles_default)
+        │       ├── odem_base.yml         # odem-base role variable overrides
+        │       ├── odem_os.yml           # odem-os role variable overrides
+        │       ├── odem_users.yml
+        │       ├── odem_optimize.yml
+        │       ├── odem_terminal.yml
+        │       ├── odem_development.yml
+        │       ├── odem_desktop.yml
+        │       ├── odem_hardening.yml
+        │       └── odem_backup.yml
         └── playbooks/                   # 7 tier playbooks
             ├── bootstrap.yml            # base roles only
             ├── terminal_minimal.yml
@@ -51,7 +51,7 @@ examples/
   basename. Don't add playbooks that aren't in the 7-tier model
   (bootstrap / terminal_{min,full} / desktop_{min,full} /
   workstation_{min,full}).
-- **`group_vars/all/mps_*.yml`** are commented-out dumps of every
+- **`group_vars/all/odem_*.yml`** are commented-out dumps of every
   collection's role defaults. They serve as the place for users to
   override role variables without writing a new role. Refresh them via
   the script in `manage/` if defaults drift significantly.

@@ -6,17 +6,17 @@
   become: true
 
   roles:
-    # mps.optimize
-    - mps.optimize.zram
-    - mps.optimize.ramdisks
-    - mps.optimize.kmscon
+    # odem.optimize
+    - odem.optimize.zram
+    - odem.optimize.ramdisks
+    - odem.optimize.kmscon
 
-    # mps.development
-    - mps.development.opencode
+    # odem.development
+    - odem.development.opencode
 
-    # mps.hardening
-    - mps.hardening.firewall
-    - mps.hardening.apparmor
-    - mps.hardening.auditd
-    - mps.hardening.aide
-    - mps.hardening.lockdown
+    # odem.hardening
+    - odem.hardening.firewall
+    - odem.hardening.apparmor
+    - odem.hardening.auditd
+    - odem.hardening.aide
+    - odem.hardening.lockdown

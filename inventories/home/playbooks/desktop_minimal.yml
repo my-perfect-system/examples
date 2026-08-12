@@ -6,12 +6,12 @@
   become: true
 
   roles:
-    - mps.desktop.x11
-    - mps.desktop.wm
-    - mps.desktop.qtile
-    - mps.desktop.rofi
-    - mps.desktop.thunar
-    - mps.desktop.essentials
-    - mps.desktop.lightdm
-    - mps.desktop.gnometools
-    - mps.desktop.brave
+    - odem.desktop.x11
+    - odem.desktop.wm
+    - odem.desktop.qtile
+    - odem.desktop.rofi
+    - odem.desktop.thunar
+    - odem.desktop.essentials
+    - odem.desktop.lightdm
+    - odem.desktop.gnometools
+    - odem.desktop.brave

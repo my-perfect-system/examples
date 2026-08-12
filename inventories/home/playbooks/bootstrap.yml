@@ -4,11 +4,11 @@
   become: true
 
   roles:
-    - mps.base.identity
-    - mps.os.system_settings
-    - mps.os.package_manager
-    - mps.os.system_tools
-    - mps.users.users
-    - mps.users.groups
-    - mps.users.ssh
-    - mps.users.sudo
+    - odem.base.identity
+    - odem.os.system_settings
+    - odem.os.package_manager
+    - odem.os.system_tools
+    - odem.users.users
+    - odem.users.groups
+    - odem.users.ssh
+    - odem.users.sudo

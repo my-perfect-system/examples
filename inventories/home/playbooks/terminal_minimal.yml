@@ -6,6 +6,6 @@
   become: true
 
   roles:
-    - mps.terminal.bash
-    - mps.terminal.vim
-    - mps.terminal.tmux
+    - odem.terminal.bash
+    - odem.terminal.vim
+    - odem.terminal.tmux

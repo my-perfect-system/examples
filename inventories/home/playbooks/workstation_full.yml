@@ -6,23 +6,23 @@
   become: true
 
   roles:
-    # mps.optimize
-    - mps.optimize.zram
-    - mps.optimize.ramdisks
-    - mps.optimize.kmscon
+    # odem.optimize
+    - odem.optimize.zram
+    - odem.optimize.ramdisks
+    - odem.optimize.kmscon
 
-    # mps.development
-    - mps.development.opencode
-    - mps.development.java
-    - mps.development.dotnet
-    - mps.development.espidf
-    - mps.development.latex
-    - mps.development.lmstudio
-    - mps.development.unity
+    # odem.development
+    - odem.development.opencode
+    - odem.development.java
+    - odem.development.dotnet
+    - odem.development.espidf
+    - odem.development.latex
+    - odem.development.lmstudio
+    - odem.development.unity
 
-    # mps.hardening
-    - mps.hardening.firewall
-    - mps.hardening.apparmor
-    - mps.hardening.auditd
-    - mps.hardening.aide
-    - mps.hardening.lockdown
+    # odem.hardening
+    - odem.hardening.firewall
+    - odem.hardening.apparmor
+    - odem.hardening.auditd
+    - odem.hardening.aide
+    - odem.hardening.lockdown
