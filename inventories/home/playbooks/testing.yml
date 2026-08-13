@@ -1,0 +1,7 @@
+---
+- name: Testing hosts
+  hosts: all
+  become: true
+
+  roles:
+    - odem.hardening.fail2ban
