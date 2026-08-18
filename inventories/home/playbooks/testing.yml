@@ -3,5 +3,11 @@
   hosts: all
   become: true
 
+  vars:
+    lockdown_enable_execute: true
+
   roles:
-    - odem.hardening.fail2ban
+    - odem.terminal.vim
+    - odem.terminal.nvim
+    - odem.terminal.bash
+    - odem.terminal.scripts
