@@ -1,5 +1,5 @@
 ---
-- import_playbook: terminal_full.yml
+# - import_playbook: terminal_full.yml
 
 - name: Deploy services
   hosts: all
