@@ -10,7 +10,12 @@
     lockdown_enable_xwindow_server: true
   roles:
     # - odem.terminal.bash
-    - odem.services.monitoring
+    # - odem.services.monitoring
+    - odem.alloy.install
+    - odem.alloy.host
+    - odem.alloy.docker
+    - odem.alloy.cadvisor
+    - odem.alloy.blackbox
     # - odem.services.docker
     # - odem.services.openvpn
     # - odem.services.monitoring
