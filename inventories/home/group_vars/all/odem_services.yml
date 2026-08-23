@@ -51,3 +51,23 @@
 # openvpn_network_subnet: 10.9.0.0/24
 
 # openvpn_compose_file: docker-compose.ansible.yml
+
+# monitoring_enable_service: true
+# monitoring_enable_setup: true
+
+# monitoring_packages:
+#   - git
+
+# monitoring_repo_url: https://github.com/my-perfect-system/mps-monitoring.git
+# monitoring_repo_version: main
+# monitoring_repo_dest: "{{ common_default_repo_dir }}/mps-monitoring"
+
+# monitoring_bind_ip: "127.0.0.1"
+# monitoring_grafana_port: 3000
+# monitoring_prometheus_port: 9090
+# monitoring_loki_port: 3100
+# monitoring_grafana_admin_user: admin
+# monitoring_grafana_admin_password: admin
+# monitoring_prometheus_version: v3.12.0
+# monitoring_loki_version: 3.7.2
+# monitoring_grafana_version: 13.0.2

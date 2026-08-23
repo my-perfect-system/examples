@@ -1,5 +1,5 @@
 ---
-# - import_playbook: terminal_full.yml
+- import_playbook: terminal_full.yml
 
 - name: Deploy services
   hosts: all
@@ -9,9 +9,11 @@
     lockdown_enable_execute: false
     lockdown_enable_xwindow_server: true
   roles:
-    - odem.terminal.bash
+    # - odem.terminal.bash
+    - odem.services.monitoring
     # - odem.services.docker
     # - odem.services.openvpn
+    # - odem.services.monitoring
     # - odem.hardening.firewall
     # - odem.hardening.apparmor
     # - odem.hardening.auditd
