@@ -62,6 +62,13 @@ user_password: "changeme"
 # ---------------------------------------------------------------------------
 # user_roles_default — global default per-user role set
 # ---------------------------------------------------------------------------
+root_roles_default:
+  terminal_bash: true
+  terminal_vim: true
+  terminal_tmux: true
+  terminal_scripts: true
+  desktop_essentials: true
+
 user_roles_default:
   terminal_bash: true
   terminal_vim: true
@@ -88,8 +95,12 @@ user_roles_default:
 
 user_roles_minimal:
   terminal_bash: true
+  terminal_tmux: true
   terminal_vim: true
-
+  terminal_python: true
+  terminal_rust: true
+  terminal_nvim: true
+  terminal_scripts: true
 
 # ---------------------------------------------------------------------------
 # users_catalog — identity catalog (empty by default, override per host)
@@ -101,7 +112,7 @@ users_catalog:
     name: "root"
     comment: "root"
     password: "rootpass"
-    home: /root/
+    home: /root
     group: "root"
     groups: "{{ user_groups }}"
     system: true
@@ -109,7 +120,7 @@ users_catalog:
     create_home: "{{ user_create_home }}"
     expires: "{{ user_expires }}"
     append_groups: "{{ user_append_groups }}"
-    user_roles: "{{ user_roles_default }}"
+    user_roles: "{{ root_roles_default }}"
 
   deploy:
     name: "deploy"
