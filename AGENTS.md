@@ -32,15 +32,17 @@ examples/
         │       ├── odem_development.yml
         │       ├── odem_desktop.yml
         │       ├── odem_hardening.yml
-        │       └── odem_backup.yml
-        └── playbooks/                   # 7 tier playbooks
+        │       ├── odem_backup.yml
+        │       └── odem_services.yml
+        └── playbooks/                   # tier playbooks + services
             ├── bootstrap.yml            # base roles only
             ├── terminal_minimal.yml
             ├── terminal_full.yml
             ├── desktop_minimal.yml
             ├── desktop_full.yml
             ├── workstation_minimal.yml
-            └── workstation_full.yml
+            ├── workstation_full.yml
+            └── services.yml             # odem.services roles
 ```
 
 ## Conventions
@@ -48,9 +50,10 @@ examples/
 - **One inventory per environment** (`home/`, future `prod/`, etc.). Each is
   self-contained — ansible.cfg, inventories, vars, playbooks.
 - **`playbooks/` is the call surface** — `run-example` accepts a playbook
-  basename. Don't add playbooks that aren't in the 7-tier model
+  basename. Tier playbooks follow the 7-tier model
   (bootstrap / terminal_{min,full} / desktop_{min,full} /
-  workstation_{min,full}).
+  workstation_{min,full}); `services.yml` is the standalone entry point
+  for the `odem.services` collection.
 - **`group_vars/all/odem_*.yml`** are commented-out dumps of every
   collection's role defaults. They serve as the place for users to
   override role variables without writing a new role. Refresh them via

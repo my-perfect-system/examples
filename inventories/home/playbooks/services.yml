@@ -1,0 +1,10 @@
+---
+# - import_playbook: bootstrap.yml
+
+- name: Deploy services
+  hosts: all
+  become: true
+
+  roles:
+    - odem.services.docker
+    - odem.services.openvpn

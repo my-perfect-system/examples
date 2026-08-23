@@ -1,0 +1,53 @@
+# docker_enable_service: true
+
+# docker_keyring_dir: /etc/apt/keyrings
+# docker_keyring_path: "{{ docker_keyring_dir }}/docker.asc"
+# docker_gpg_key_url: https://download.docker.com/linux/debian/gpg
+# docker_repo_url: https://download.docker.com/linux/debian
+# docker_repo_release: "{{ ansible_distribution_release }}"
+# docker_apt_filename: docker
+
+# docker_prereq_packages:
+#   - ca-certificates
+#   - curl
+#   - gnupg
+
+# docker_engine_packages:
+#   - docker-ce
+#   - docker-ce-cli
+#   - containerd.io
+#   - docker-buildx-plugin
+#   - docker-compose-plugin
+
+# docker_service: docker
+
+# openvpn_enable_service: true
+# openvpn_enable_regenerate: false
+
+# openvpn_packages:
+#   - git
+#   - curl
+
+# openvpn_repo_url: https://github.com/my-perfect-system/mps-openvpn.git
+# openvpn_repo_version: main
+# openvpn_repo_dest: "{{ common_default_repo_dir }}/mps-openvpn"
+
+# openvpn_server_address: "{{ ansible_host | default('server') }}"
+
+# openvpn_easyrsa_req_country: "US"
+# openvpn_easyrsa_req_province: "California"
+# openvpn_easyrsa_req_city: "San Francisco"
+# openvpn_easyrsa_req_org: "MPS OpenVPN"
+# openvpn_easyrsa_req_email: "admin@example.com"
+# openvpn_easyrsa_req_ou: "TestLab"
+# openvpn_easyrsa_key_size: 2048
+# openvpn_easyrsa_algo: rsa
+# openvpn_easyrsa_ca_expire: 3650
+# openvpn_easyrsa_cert_expire: 3650
+
+# openvpn_network_name: example-tap
+# openvpn_network_mode: tap
+# openvpn_network_port: 1195
+# openvpn_network_subnet: 10.9.0.0/24
+
+# openvpn_compose_file: docker-compose.ansible.yml
