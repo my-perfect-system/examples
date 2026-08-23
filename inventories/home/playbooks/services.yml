@@ -5,6 +5,14 @@
   hosts: all
   become: true
 
+  vars:
+    lockdown_enable_execute: false
+    lockdown_enable_xwindow_server: true
   roles:
-    - odem.services.docker
-    - odem.services.openvpn
+    # - odem.services.docker
+    # - odem.services.openvpn
+    # - odem.hardening.firewall
+    # - odem.hardening.apparmor
+    # - odem.hardening.auditd
+    # - odem.hardening.aide
+    - odem.hardening.lockdown
