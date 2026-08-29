@@ -4,10 +4,9 @@
   become: true
 
   vars:
-    lockdown_enable_execute: true
+    lockdown_enable_execute: false
 
   roles:
-    - odem.terminal.vim
-    - odem.terminal.nvim
-    - odem.terminal.bash
-    - odem.terminal.scripts
+    # - odem.services.docker
+    # - odem.services.monitoring
+    - odem.services.openwebui
