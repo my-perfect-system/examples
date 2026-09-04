@@ -1,0 +1,116 @@
+# base_user: alloy
+# base_config_dir: /etc/alloy
+# base_env_file: /etc/default/alloy
+# base_web_ui_port: 12345
+# base_metrics_port: 9400
+# base_custom_labels: "os=debian13,systype=hw,physloc=de"
+# base_remote_prometheus_url: "http://10.10.100.180:9090/api/v1/write"
+# base_remote_loki_url: "http://10.10.100.180:3100/loki/api/v1/push"
+
+# install_enable_dac_read_search: true
+# install_enable_livedebugging: false
+
+# host_enable_logs: true
+# host_enable_metrics: true
+
+# alloy_syslog_paths:
+#   - /var/log/syslog
+#   - /var/log/auth.log
+#   - /var/log/cron.log
+#   - /var/log/kern.log
+#   - /var/log/unattended-upgrades
+#   - /var/log/user.log
+#   - /var/log/wtmp
+#   - /var/log/lastlog
+
+# alloy_host_collectors:
+#   - arp
+#   - bcache
+#   - bonding
+#   - boottime
+#   - btrfs
+#   - buddyinfo
+#   - cpu
+#   - diskstats
+#   - dmi
+#   - drm
+#   - edac
+#   - entropy
+#   - ethtool
+#   - filefd
+#   - filesystem
+#   - hwmon
+#   - interrupts
+#   - ksmd
+#   - lnstat
+#   - loadavg
+#   - logind
+#   - meminfo
+#   - meminfo_numa
+#   - mountstats
+#   - netclass
+#   - netdev
+#   - netstat
+#   - network_route
+#   - os
+#   - perf
+#   - powersupplyclass
+#   - pressure
+#   - processes
+#   - qdisc
+#   - rapl
+#   - schedstat
+#   - sockstat
+#   - softirqs
+#   - softnet
+#   - stat
+#   - sysctl
+#   - systemd
+#   - tcpstat
+#   - textfile
+#   - thermal_zone
+#   - time
+#   - timex
+#   - udp_queues
+#   - uname
+#   - vmstat
+#   - wifi
+#   - xfs
+#   - zfs
+#   - zoneinfo
+
+# docker_enable_logs: true
+# docker_enable_metrics: true
+# docker_metrics_exclude_containers: []
+
+# cadvisor: no role-specific variables (shared alloy_* come from odem.alloy.base)
+
+# blackbox_enable_exporter: true
+# blackbox_enable_scrape: true
+# blackbox_exporter_port: 9115
+# blackbox_config_file: /etc/prometheus/blackbox.yml
+# blackbox_exporter_extra_args: ""
+# blackbox_modules:
+#   http_2xx:
+#     prober: http
+#     timeout: 5s
+#     http:
+#       preferred_ip_protocol: ip4
+#       method: GET
+#       fail_if_not_ssl: true
+# blackbox_probe_targets:
+#   - name: justaname
+#     target: https://www.google.de
+#     module: http_2xx
+
+# sms_enable_exporter: true
+# sms_enable_scrape: true
+# sms_repo_url: https://github.com/simple-metrics-server/sms-webapp.git
+# sms_repo_version: main
+# sms_repo_dest: "{{ common_default_repo_dir }}/github/simple-metrics-server/sms-webapp"
+# sms_bind: 127.0.0.1
+# sms_port: 9555
+# sms_scrape_interval: 10s
+# sms_app_scrape_interval: 60
+# sms_service_name: sms-webapp
+# sms_env_file: /etc/default/sms-webapp

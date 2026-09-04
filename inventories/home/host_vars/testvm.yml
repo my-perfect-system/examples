@@ -1,3 +1,8 @@
 ---
 ansible_user: deploy
 ansible_host: 10.10.100.180
+
+#  alloy
+base_custom_labels: "mps_alloy_os_name=debian13,mps_alloy_systype=hw,mps_alloy_physloc=de"
+base_remote_prometheus_url: "http://blackbeard.tortuga.lokal:9090/api/v1/write"
+base_remote_loki_url: "http://blackbeard.tortuga.lokal:3100/loki/api/v1/push"
