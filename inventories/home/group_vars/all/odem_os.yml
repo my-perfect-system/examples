@@ -10,6 +10,13 @@
 # package_manager_upgrade: dist
 
 # system_settings_timezone: "Europe/Berlin"
+# system_settings_hosts_entries: []
+#   # - ip: 10.23.43.10
+#   #   names: [blackbeard]
+#   #   fqdn: blackbeard.tortuga.lokal
+# system_settings_install_packages: []
+# system_settings_remove_packages: []
+# system_settings_dns_server: ""
 # system_settings_locale_name: "en_US.UTF-8"
 # system_settings_keyboard_model: "pc105"
 # system_settings_keyboard_layout: "de"

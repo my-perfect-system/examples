@@ -7,7 +7,8 @@
 # base_remote_prometheus_url: "http://10.10.100.180:9090/api/v1/write"
 # base_remote_loki_url: "http://10.10.100.180:3100/loki/api/v1/push"
 
-# install_enable_dac_read_search: true
+# install_enable_change_user: false
+# install_service_user: root
 # install_enable_livedebugging: false
 
 # host_enable_logs: true
@@ -81,9 +82,11 @@
 
 # docker_enable_logs: true
 # docker_enable_metrics: true
-# docker_metrics_exclude_containers: []
-
-# cadvisor: no role-specific variables (shared alloy_* come from odem.alloy.base)
+# docker_enable_cadvisor_service: true
+# docker_cadvisor_image: gcr.io/cadvisor/cadvisor:v0.51.0
+# docker_cadvisor_compose_dir: /etc/alloy/cadvisor
+# docker_cadvisor_port: "8080"
+# docker_cadvisor_scrape_interval: "60s"
 
 # blackbox_enable_exporter: true
 # blackbox_enable_scrape: true
@@ -107,7 +110,7 @@
 # sms_enable_scrape: true
 # sms_repo_url: https://github.com/simple-metrics-server/sms-webapp.git
 # sms_repo_version: main
-# sms_repo_dest: "{{ common_default_repo_dir }}/github/simple-metrics-server/sms-webapp"
+# sms_repo_dest: "{{ identity_default_repo_dir }}/github/simple-metrics-server/sms-webapp"
 # sms_bind: 127.0.0.1
 # sms_port: 9555
 # sms_scrape_interval: 10s

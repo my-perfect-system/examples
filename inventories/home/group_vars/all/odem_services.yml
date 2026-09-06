@@ -30,7 +30,7 @@
 
 # openvpn_repo_url: https://github.com/my-perfect-system/mps-openvpn.git
 # openvpn_repo_version: main
-# openvpn_repo_dest: "{{ common_default_repo_dir }}/mps-openvpn"
+# openvpn_repo_dest: "{{ identity_default_repo_dir }}/mps-openvpn"
 
 # openvpn_server_address: "{{ ansible_host | default('server') }}"
 
@@ -60,7 +60,7 @@
 
 # monitoring_repo_url: https://github.com/my-perfect-system/mps-monitoring.git
 # monitoring_repo_version: main
-# monitoring_repo_dest: "{{ common_default_repo_dir }}/mps-monitoring"
+# monitoring_repo_dest: "{{ identity_default_repo_dir }}/mps-monitoring"
 
 # monitoring_bind_ip: "127.0.0.1"
 # monitoring_grafana_port: 3000

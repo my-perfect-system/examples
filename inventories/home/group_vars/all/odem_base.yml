@@ -1,3 +1,14 @@
+# identity_default_repo_dir: /srv/repo
+# identity_default_repo_dir_mps: /srv/repo/github/my-perfect-system
+# identity_default_file_mode: "0600"
+# identity_default_dir_mode: "0700"
+# identity_default_script_mode: "0700"
+# identity_default_owner: root
+# identity_default_group: root
+# identity_default_suid_mode: "2770"
+# identity_enable_group_folders: true
+# identity_group_folders: []
+# identity_group_folders_mode: "2770"
 # user_shell: /bin/bash
 # user_create_home: true
 # user_system: false
