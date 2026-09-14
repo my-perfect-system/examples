@@ -127,3 +127,7 @@
 # monitoring_grafana_scrape_interval: 30s
 # monitoring_loki_scrape_interval: 30s
 # monitoring_prometheus_scrape_interval: 30s
+
+# fail2ban_enable_logs: true
+# fail2ban_log_paths:
+#   - /var/log/fail2ban.log
