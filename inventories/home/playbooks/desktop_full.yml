@@ -14,7 +14,7 @@
     - odem.desktop.essentials
     - odem.desktop.kanata
     - odem.desktop.lightdm
-    - odem.desktop.plymouth
+    # - odem.desktop.plymouth
     - odem.desktop.grubmenu
     - odem.desktop.gnometools
     - odem.desktop.firefox
