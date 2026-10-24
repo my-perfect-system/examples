@@ -25,3 +25,4 @@
     # - odem.hardening.auditd
     # - odem.hardening.aide
     # - odem.hardening.lockdown
+    # - odem.hardening.wazuh

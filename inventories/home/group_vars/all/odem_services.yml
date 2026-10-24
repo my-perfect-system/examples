@@ -71,3 +71,19 @@
 # monitoring_prometheus_version: v3.12.0
 # monitoring_loki_version: 3.7.2
 # monitoring_grafana_version: 13.0.2
+
+# monitoring_enable_wazuh: false
+# monitoring_wazuh_version: "5.0.0-beta5"
+# monitoring_wazuh_packages:
+#   - openssl
+# monitoring_wazuh_indexer_heap_gb: 1
+# monitoring_wazuh_agent_port: 1514
+# monitoring_wazuh_enrollment_port: 1515
+# monitoring_wazuh_tls_port: 1517
+# monitoring_wazuh_syslog_port: 514
+# monitoring_wazuh_api_port: 55000
+# monitoring_wazuh_dashboard_port: 443
+# monitoring_wazuh_manager_indexer_user: wazuh-manager
+# monitoring_wazuh_manager_indexer_password: wazuh-manager
+# monitoring_wazuh_dashboard_user: kibanaserver
+# monitoring_wazuh_dashboard_password: kibanaserver

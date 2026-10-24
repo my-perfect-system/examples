@@ -1,6 +1,4 @@
 ---
-ansible_user: deploy
-ansible_host: 10.10.100.180
 
 #  alloy
 base_custom_labels: "mps_alloy_os_name=debian13,mps_alloy_systype=hw,mps_alloy_physloc=de"

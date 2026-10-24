@@ -9,7 +9,10 @@
 
 # install_enable_change_user: false
 # install_service_user: root
-# install_enable_livedebugging: false
+# install_enable_livedebugging: true
+# install_enable_purge_config: true
+# install_enable_self_collector: true
+# install_enable_web_ui: true
 
 # host_enable_logs: true
 # host_enable_metrics: true

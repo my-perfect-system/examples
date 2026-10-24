@@ -57,3 +57,16 @@
 # lockdown_cis_repo: "https://github.com/ansible-lockdown/DEBIAN13-CIS"
 # lockdown_cis_version: "main"
 # lockdown_firewall_package: iptables
+
+# wazuh_enable_service: true
+# wazuh_enable_enrollment: true
+# wazuh_enable_registration_password: false
+# wazuh_package_version: "5.0.0-1"
+# wazuh_agent_manager_host: ""
+# wazuh_agent_manager_port: 1517
+# wazuh_agent_enrollment_server: "{{ wazuh_agent_manager_host }}"
+# wazuh_agent_enrollment_port: 1515
+# wazuh_agent_name: ""
+# wazuh_agent_groups: []
+# wazuh_agent_registration_password: ""
+# wazuh_agent_server_ca_path: ""
