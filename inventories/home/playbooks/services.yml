@@ -11,13 +11,13 @@
   roles:
     # - odem.terminal.bash
     # - odem.services.monitoring
-    - odem.alloy.install
-    - odem.alloy.host
-    - odem.alloy.docker
-    - odem.alloy.cadvisor
-    - odem.alloy.blackbox
-    - odem.alloy.sms
-    # - odem.services.docker
+    # - odem.alloy.install
+    # - odem.alloy.host
+    # - odem.alloy.docker
+    # - odem.alloy.cadvisor
+    # - odem.alloy.blackbox
+    # - odem.alloy.sms
+    - odem.services.docker
     # - odem.services.openvpn
     # - odem.services.monitoring
     # - odem.hardening.firewall

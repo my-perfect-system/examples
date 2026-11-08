@@ -1,3 +1,3 @@
-# backup_enable_persist_brave: false
-# backup_source: ""
-# backup_ssh_source: ""
+backup_enable_persist_brave: false
+backup_source: "/data/disks/1tbssd/backup/backup_ansible/"
+backup_ssh_source: "/data/disks/1tbssd/backup/backup_ansible/ssh"

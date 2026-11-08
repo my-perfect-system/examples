@@ -5,9 +5,9 @@
 
   roles:
     - odem.base.identity
-    - odem.os.system_settings
-    - odem.os.package_manager
-    - odem.os.system_tools
+    # - odem.os.system_settings
+    # - odem.os.package_manager
+    # - odem.os.system_tools
     - odem.users.users
     - odem.users.groups
     - odem.users.ssh

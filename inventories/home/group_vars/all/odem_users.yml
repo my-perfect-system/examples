@@ -141,13 +141,13 @@ users_catalog:
       group: true
     user_roles: "{{ user_roles_minimal }}"
 
-  user1:
-    name: "user1"
-    comment: "user1"
-    password: "user1pass"
-    group: "user1"
+  jb:
+    name: "jb"
+    comment: "jb"
+    password: "jbpass"
+    group: "jb"
     groups: "{{ admin_groups }}"
-    home: /home/user1
+    home: /home/jb
     system: "{{ user_system }}"
     shell: "{{ user_shell }}"
     create_home: "{{ user_create_home }}"
@@ -169,10 +169,10 @@ users_catalog:
 users_list:
   - name: default_root
     state: present
-  - name: user1
+  - name: jb
     state: present
   - name: deploy
-    state: present
+    state: absent
   - name: old_user
     state: absent
 
