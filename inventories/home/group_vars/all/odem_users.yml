@@ -57,7 +57,7 @@ user_expires: -1
 user_groups: []
 user_default_admin_group: "admin"
 user_default_config_group: "config"
-admin_groups: [user_default_admin_group, user_default_config_group]
+admin_groups: ["{{ user_default_admin_group }}", "{{ user_default_config_group }}"]
 user_append_groups: true
 user_password: "changeme"
 
