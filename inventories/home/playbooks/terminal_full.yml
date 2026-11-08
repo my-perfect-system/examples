@@ -1,5 +1,5 @@
 ---
-# - import_playbook: bootstrap.yml
+- import_playbook: bootstrap.yml
 
 - name: Configure terminal (full)
   hosts: all
